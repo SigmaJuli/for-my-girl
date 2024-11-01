@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise gift<3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style type="text/css">
+    	/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #8b0000; /* Dark red background */
+    animation: fadeInHero 1.5s ease-out forwards;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff; /* White text */
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: slideInText 1.5s forwards;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Light grey text */
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: slideInText 1.5s forwards 0.5s;
+}
+
+/* Image */
+.hero img {
+    width: 200px; /* Size of the image */
+    height: 200px; /* Size of the image */
+    object-fit: cover;
+    border-radius: 20px; /* Adjust for rounded corners */
+    margin: 0 auto; /* Center it horizontally */
+    display: block; /* Ensure it behaves like a block element */
+    position: relative; /* Enable positioning */
+    top: 5px; /* Move it downward to lower its position */
+    animation: fadeInHeart 2s ease-out forwards;
+}
+
+/* Button */
+.cta-button {
+    padding: 0.75rem 2rem;
+    background-color: #fff;
+    color: #8b0000; /* Dark red text */
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 20px; /* Add some margin to move the button lower */
+}
+
+
+.cta-button:hover {
+    background-color: #8b0000;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #8b0000; /* Dark red footer */
+    color: white;
+}
+
+/* Animations */
+@keyframes slideInText {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHero {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHeart {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1>Welcome, Nova!</h1>
+            <p>Crazy how it's been almost three years since we've become friends. And,
+            I prepared a letter for you.</p>
+            <!-- Normal image with rounded borders -->
+            <img src="us.png" alt="Cat Image">
+            <a href="letter.html"><button class="cta-button">View my letter?</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 SigmaJuli. All rights reserved.</p>
+    </footer>
+</body>
+</html>
